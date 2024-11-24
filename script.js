@@ -85,3 +85,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+// Captura o formulário e botão de cálculo
+const calcularBtn = document.getElementById("calcular-btn");
+const resultadoDiv = document.getElementById("resultado-custo");
+
+// Adiciona evento de clique ao botão de cálculo
+calcularBtn.addEventListener("click", () => {
+    const distanciaInput = document.getElementById("distancia");
+    const distancia = parseFloat(distanciaInput.value);
+
+    if (isNaN(distancia) || distancia <= 0) {
+        resultadoDiv.textContent = "Por favor, insira uma distância válida!";
+        resultadoDiv.style.color = "red";
+        return;
+    }
+
+    // Calcula o custo da visita técnica
+    const custo = distancia * 1; // R$1 por KM
+    resultadoDiv.textContent = `O custo estimado para a visita técnica é: R$ ${custo.toFixed(2)}`;
+    resultadoDiv.style.color = "#333";
+});

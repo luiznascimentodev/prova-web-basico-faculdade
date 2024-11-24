@@ -957,7 +957,7 @@ form button:hover {
 #whatsapp-icon {
     position: fixed;
     bottom: 20px;
-    left: 20px; /* Altere "right" para "left" */
+    right: 20px; /* Altere "right" para "left" */
     z-index: 1000;
     animation: bounce 2s infinite; /* Adiciona a animação */
   }
@@ -1004,6 +1004,46 @@ form button:hover {
     outline: none; /* Remove o contorno ao focar */
 }
 
+/* Texto destacado */
+mark {
+    background-color: #fff3cd;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+mark.hover-highlight {
+    transition: background-color 0.3s;
+}
+
+mark.hover-highlight:hover {
+    background-color: #d4edda;
+}
+
+/* Listas */
+ol {
+    margin: 20px 0;
+    padding-left: 40px;
+    list-style: decimal;
+}
+
+ul {
+    margin: 20px 0;
+    padding-left: 40px;
+    list-style: disc;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Títulos */
+h2, h3 {
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     #changeBG {
@@ -1021,5 +1061,169 @@ form button:hover {
         font-size: 10px; /* Fonte menor para telas pequenas */
         bottom: 10px; /* Ajusta ainda mais para o fundo */
         right: 10px; /* Ajusta a distância à direita */
+    }
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead th {
+    background-color: #001f3f;
+    ;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #d0ebff;
+    cursor: pointer;
+}
+
+/* Estilo do título */
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+..calculo-visita {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Define um limite para telas maiores */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto;
+}
+
+.calculo-visita h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+    text-align: center; /* Centraliza o título */
+}
+
+#calculo-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#calculo-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#calculo-form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Ajusta o botão para preencher a largura */
+}
+
+#calculo-form button:hover {
+    background-color: #0056b3;
+}
+
+#resultado-custo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .calculo-visita {
+        padding: 15px;
+        max-width: 90%; /* Ocupa 90% da tela em dispositivos menores */
+    }
+
+    #calculo-form input {
+        padding: 10px;
+        font-size: 16px; /* Aumenta a legibilidade */
+    }
+
+    #calculo-form button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #resultado-custo {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculo-visita {
+        padding: 10px;
+        max-width: 95%; /* Ocupa quase toda a tela */
+    }
+
+    #calculo-form input, 
+    #calculo-form button {
+        font-size: 14px; /* Ajusta para telas muito pequenas */
+    }
+
+    #resultado-custo {
+        font-size: 14px;
     }
 }
