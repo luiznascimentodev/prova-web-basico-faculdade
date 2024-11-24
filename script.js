@@ -106,3 +106,5 @@ calcularBtn.addEventListener("click", () => {
     resultadoDiv.textContent = `O custo estimado para a visita técnica é: R$ ${custo.toFixed(2)}`;
     resultadoDiv.style.color = "#333";
 });
+
+
