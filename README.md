@@ -24,8 +24,15 @@ O projeto é composto pelos seguintes arquivos e diretórios:
 
 ## Como Visualizar o Projeto
 
-Para visualizar o projeto em seu ambiente local:
+Você pode visualizar este projeto online através do GitHub Pages:
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/luiznascimentodev/prova-web-basico-faculdade.git
+👉 **[Acesse o site aqui](https://luiznascimentodev.github.io/prova-web-basico-faculdade/)**
+
+---
+
+## Contato
+
+Para mais informações, entre em contato:
+
+- **Autor**: Luiz Nascimento  
+- **LinkedIn**: [linkedin.com/in/luiz-felippe-nascimento](https://www.linkedin.com/in/luiz-felippe-nascimento/)
